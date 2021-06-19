@@ -1,0 +1,59 @@
+/* Navbar */
+#navbar{
+    flex-direction: column;
+    position: relative;
+}
+#navList{
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Home Section */
+#home::before{
+    height: 550px;
+}
+#home{
+    margin: 0;
+    padding: 5px 15px;
+    color: white;
+    text-shadow: 2px 2px 8px black;
+    margin-bottom: 50px;
+    
+}
+#home div p{
+    text-shadow: 1px 1px 4px black;
+    margin-bottom: 10px;
+    }
+
+.home-heading{
+    font-size: 2.1rem;
+}
+
+/* Services */
+#services{
+    flex-direction: column;
+    margin: 0px 5px;
+    
+}
+#services-container{
+    margin: 15px;
+}
+
+.box{
+    width: 100%;
+    margin: 10px 0px;
+}
+.box p{
+    text-align: center;
+}
+/* Media Partners Section */
+#media-partners{
+    flex-wrap: wrap;
+}
+
+#contact-us-container{
+    overflow: hidden;
+    margin-bottom: 0px;
+    padding: 0px;
+    margin-top: 10px;
+}

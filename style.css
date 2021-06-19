@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+/* --------------------------------------- */
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* --------------------------------------- */
+/* Variables */
+:root{
+    --p-heading: 'Roboto Condensed', sans-serif;
+    --p-secondary: 'Noto Sans JP', sans-serif;
+    --normal-text: 'Montserrat', sans-serif;
+    --heading-color: rgb(68, 68, 68);
+}
+
+/* --------------------------------------- */
+/* HTML */
+html{
+    scroll-behavior: smooth;
+}
+/* --------------------------------------- */
+/* Before Navbar */
+#navbar::before{
+    content: "";
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.45;
+}
+/* Navbar */
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 2px 30px;
+    
+}
+/* Navbar - Logo and Nav - Items */
+/* Logo */
+#logo{
+    margin: 3px 5px;
+}
+#logo img{
+    height: 50px;
+    width: 70px;
+    margin: 10px 15px;
+    filter: invert(100%);
+    cursor: pointer;
+}
+#logo img:hover{
+    filter: invert(0%);
+    transition: all 0.3s ease-in-out 0s;
+}
+/* Nav - Items */
+#navList{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    
+}
+#navList li{
+    list-style: none;
+    margin: 3px 5px;
+}
+.navItem a{
+    text-decoration: none;
+    padding: 7px 10px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.05rem;
+    margin: 8px 0px;
+}
+.navItem a:hover{
+    color: black;
+    background-color: white;
+    border-radius: 30px;
+    transition: background-color 0.5s ease-in-out 0s;
+}
+
+/* -------------------------------- */
+/* Home Section */
+/* Before Home */
+#home::before{
+    content: "";
+    background-image: url("sunrise.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.75;
+}
+/* Home */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 80px;
+    margin: 80px 145px;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    margin-bottom: 180px;
+    
+}
+.home-heading{
+    margin-bottom: 10px;
+}
+#home p{
+    text-shadow: 1px 1px 15px white;
+}
+/* -------------------------------- */
+/* Services Section */
+#services-container{
+    margin: 0px 80px;
+    margin-bottom: 60px;
+}
+
+.services-heading{
+    margin-bottom: 20px;
+    color: var(--heading-color);
+}
+#services{
+    display: flex;
+}
+.box{
+    padding: 20px 25px;
+    margin: 10px 15px;
+    background-color: #e9d9e9;
+    border-radius: 30px;
+    width: 32%;
+   
+}
+
+.box h2{
+    margin-bottom: 10px;
+    color: var(--heading-color);
+}
+.box p{
+    text-align: left;
+    color: rgb(75, 74, 74);
+}
+.box i {
+    width: 120px;
+    height: 120px;
+    font-size: 3.2rem;
+    border-radius: 100%;
+    border: 2px solid rebeccapurple;
+    padding: 33px 17px;
+    color: blueviolet;
+    text-shadow: 2px 2px 2px black;
+    background-color: white;
+}
+/* -------------------------------- */
+/* Media Partners Section */
+/* Before Media Partners */
+#media-partners-container::before{
+    content: "";
+    background-image: url("desert.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.45;
+}
+#media-partners-container{
+    padding: 10px 50px;
+    position: relative;
+}
+#media-partners{
+    display: flex;
+    justify-content: center;
+}
+.media-partners-heading{
+    color: var(--heading-color);
+    margin: 10px;
+}
+.media-partners-img{
+    margin: 30px 60px;
+}
+.media-partners-img img:hover{
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out 0s;
+}
+.media-partners-img img{
+    height: 100px;
+}
+/* -------------------------------- */
+/* Contact Us */
+/* Before Contact Us Section */
+#contact-us-container::before{
+    content: "";
+    background-image: url("pen.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.69;   
+}
+#contact-us-container{
+    padding: 50px 250px;
+    position: relative;
+    margin-bottom: 50px;
+}
+.contact-us-heading{
+    margin: 10px 0px;
+    color: var(--heading-color);
+}
+.contact-us{
+    padding: 10px 10px;
+}
+.contact-us form div{
+    margin: 20px ;
+}
+.contact-us form div label{
+    display: block;
+    margin: 10px 0px;
+    font-family: var(--normal-text);
+    font-size: large;
+    font-weight: bolder;
+    text-shadow: 0.5px 0.5px 2px whitesmoke;
+}
+.contact-us form div input{
+    width: 100%;
+    height: 40px;
+    font-family: var(--normal-text);
+    padding: 2px 10px;
+    border-radius: 10px;
+    border: 1px solid gray;
+}
+.contact-us form div textarea{
+    width: 100%;
+    height: 120px;
+    padding: 10px 15px;
+    border-radius: 10px;
+}
+input[type="submit"]{
+    background-color: rgb(86, 86, 252);
+    color: aliceblue;
+    font-weight: bolder;
+    font-size: larger;
+    border: none;
+    cursor: pointer;
+}
+input[type="submit"]:hover{
+    background-color: rgb(73, 73, 250);
+    transition: all 0.3s ease-in-out 0s;
+}
+/* -------------------------------- */
+/* Footer Section */
+footer{
+    background-color: black;
+    padding: 10px 0px;
+    color: aliceblue;
+}
+.footer-item{
+    font-size: 15px;
+    margin: 5px 0px;
+}
+.fab, .fas{
+    padding: 5px 8px;
+    font-size: 1.2rem;
+    color: rebeccapurple;
+}
+.footer-item a i:hover{
+    color: rgb(204, 0, 255);
+    transition: all 0.3s ease-in-out 0s;
+}
+/* -------------------------------- */
+/* Utility Classes */
+.h-primary{
+    font-family: var(--p-heading);
+    font-size: 3.0rem;
+}
+.h-secondary{
+    font-family: var(--p-secondary);
+    font-size: 2rem;
+}
+.normal-text{
+    font-family: var(--normal-text);
+    font-size: 1.1rem;
+}
+.center{
+    text-align: center;
+}
