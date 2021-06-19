@@ -112,7 +112,6 @@ html{
     display: flex;
     flex-direction: column;
     padding: 10px 80px;
-    margin: 80px 145px;
     justify-content: center;
     align-items: center;
     height: 400px;
